@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "cf8d8773-e583-4fd1-86eb-fc9be45d773b",
+		"name": "Food-Menu-CRUD-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23008005"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ld0B1c2VyLmNvbSIsInVzZXJuYW1lIjoiTmV3VXNlciIsIl9pZCI6IjYzMTVhZjZhMzc5N2IwNWNlMjJiOTkxNCIsImlhdCI6MTY2MjM2NTYyMH0.0hwX2K8AuJ3RUSmg6D-Cg-SD6FfltMWzYOsqKDQhxmo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\": \"Chowmein\",\r\n    \"itemPrice\": 130,\r\n    \"category\": \"Chicken\",\r\n    \"availability\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/menus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"menus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ld0B1c2VyLmNvbSIsInVzZXJuYW1lIjoiTmV3VXNlciIsIl9pZCI6IjYzMTVhZjZhMzc5N2IwNWNlMjJiOTkxNCIsImlhdCI6MTY2MjM2NTYyMH0.0hwX2K8AuJ3RUSmg6D-Cg-SD6FfltMWzYOsqKDQhxmo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4500/menus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"menus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ld0B1c2VyLmNvbSIsInVzZXJuYW1lIjoiTmV3VXNlciIsIl9pZCI6IjYzMTVhZjZhMzc5N2IwNWNlMjJiOTkxNCIsImlhdCI6MTY2MjM2NTYyMH0.0hwX2K8AuJ3RUSmg6D-Cg-SD6FfltMWzYOsqKDQhxmo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4500/menus/6315a8628154d6249b2f3574",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"menus",
+						"6315a8628154d6249b2f3574"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ld0B1c2VyLmNvbSIsInVzZXJuYW1lIjoiTmV3VXNlciIsIl9pZCI6IjYzMTVhZjZhMzc5N2IwNWNlMjJiOTkxNCIsImlhdCI6MTY2MjM2NTYyMH0.0hwX2K8AuJ3RUSmg6D-Cg-SD6FfltMWzYOsqKDQhxmo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"availability\": true \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/menus/6315a7ba523d708818a821e6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"menus",
+						"6315a7ba523d708818a821e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ld0B1c2VyLmNvbSIsInVzZXJuYW1lIjoiTmV3VXNlciIsIl9pZCI6IjYzMTVhZjZhMzc5N2IwNWNlMjJiOTkxNCIsImlhdCI6MTY2MjM2NTYyMH0.0hwX2K8AuJ3RUSmg6D-Cg-SD6FfltMWzYOsqKDQhxmo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4500/menus/6312ff63a18f9ed4218c8381",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"menus",
+						"6312ff63a18f9ed4218c8381"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "NewUser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "new@user.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "new123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4500/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "new@user.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "new123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4500/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
